@@ -1,0 +1,46 @@
+﻿@model SistemaWebEmpleado.Models.Empleado
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@section sidebar {
+    Administracion de Empleados
+}
+    <fieldset>
+        <legend><b>Detalle Auto</b></legend>
+        <div>
+            <b>@Html.DisplayNameFor(model => model.Nombre)</b>
+        </div>
+        <div>
+            @Html.DisplayFor(model => model.Nombre)
+        </div>
+
+        <div>
+            <b>@Html.DisplayNameFor(model => model.Apellido)</b>
+        </div>
+        <div>
+            @Html.DisplayFor(model => model.Apellido)
+        </div>
+
+        <div>
+            <b>@Html.DisplayNameFor(model => model.DNI)</b>
+        </div>
+        <div>
+            @Html.DisplayFor(model => model.DNI)
+        </div>
+        <div>
+            <b> @Html.DisplayNameFor(model => model.Legajo)</b>
+        </div>
+        <div>
+            @Html.DisplayFor(model => model.Legajo)
+        </div>
+        <div>
+            <b> @Html.DisplayNameFor(model => model.Titulo)</b>
+        </div>
+        <div>
+            @Html.DisplayFor(model => model.Titulo)
+        </div>
+
+    </fieldset>
+    <p>
+        @Html.ActionLink("Back to list", "Index", "Empleado")
+    </p>
